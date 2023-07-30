@@ -8,11 +8,13 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build; gh-pages -d dist",
+    "create-state": "node node_modules/spiccato/cli.js --root=src/state"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
     "spiccato": "^0.3.2",
     "spiccato-react": "^0.1.1"
   },
