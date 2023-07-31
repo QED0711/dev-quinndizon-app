@@ -1,7 +1,11 @@
 
 const setters = {
 
-    // your setters here...
+    setAndVerifyApiKey(apiKey){
+        this.setState(() => [{apiKey}, [this.paths.apiKey]], (state) => {
+            this.methods.checkAPIKey()
+        })
+    }
 
 }
 

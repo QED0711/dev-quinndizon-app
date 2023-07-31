@@ -5,7 +5,7 @@ export default function KeyInput() {
     const [apiKey, setApiKey] = useState("");
     const handleSubmit = (e) => {
         e.preventDefault();
-        apiKeyManager.setters.setApiKey(apiKey);
+        apiKeyManager.setters.setAndVerifyApiKey(apiKey);
     };
     return (
         <form className="text-center" onSubmit={handleSubmit}>

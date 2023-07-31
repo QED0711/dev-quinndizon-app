@@ -1,7 +1,8 @@
 
 const stateSchema = {
 
-    apiKey: null
+    apiKey: null,
+    isAuthorized: false
 }
 
 export default stateSchema;
