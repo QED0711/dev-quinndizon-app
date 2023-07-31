@@ -3,12 +3,15 @@ import apiKeyManager from "../../state/apiKey/apiKeyManager";
 export default function Header() {
     return (
         <button
-            className="fixed top-2 l-2 p-2 bg-gray-500 rounded-md shadow-sm shadow-gray-400"
+            className="fixed top-2 left-2 text-green-500 text-sm"
             onClick={() => {
                 apiKeyManager.setters.setApiKey(null);
+                apiKeyManager.setters.setIsAuthorized(false);
             }}
+            title={"Click to reset API Key"}
         >
-            Clear API Key
+            <div className="relative bottom-1 inline-block h-1 w-1 bg-green-500 rounded-full"></div>
+            <p className="relative left-1 inline-block">Authorized</p>
         </button>
     );
 }

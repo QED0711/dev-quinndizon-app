@@ -8,9 +8,11 @@ const methods = {
             "x-api-key": this.state.apiKey
         }
 
-        axios.get(API_BASE_URL + "/system/status", {headers})
+        axios.get(API_BASE_URL + "/authorized", {headers})
             .then(response => {
-                console.log(response)
+                if(response.status === 200) {
+                    this.setters.setIsAuthorized(true)
+                }
             })
             .catch(err => {
                 this.setters.setIsAuthorized(false);

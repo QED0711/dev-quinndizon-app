@@ -7,7 +7,7 @@ import setters from './setters'
 import methods from './methods'
 
 
-const apiKeyManager = new Spiccato(stateSchema, {id: "main"})
+const apiKeyManager = new Spiccato(stateSchema, {id: "apiKey"})
 
 apiKeyManager.addCustomGetters(getters)
 apiKeyManager.addCustomSetters(setters)
