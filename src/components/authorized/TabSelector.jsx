@@ -18,8 +18,7 @@ const Tab = ({title, icon, onClick}) => {
 
 export default function TabSelector() {
     const handleSnapshotClick = async () => {
-        const snapshot = await mainManager.restAPI.getSnapshot()
-        console.log(snapshot)
+        mainManager.restAPI.getSnapshot()
     }
     
     const handleRewardTimerClick = async () => {

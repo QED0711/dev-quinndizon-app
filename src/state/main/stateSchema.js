@@ -1,7 +1,7 @@
 
 const stateSchema = {
 
-    snapshot: {}, 
+    snapshot: null, 
 
 }
 

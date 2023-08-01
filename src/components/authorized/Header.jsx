@@ -3,7 +3,7 @@ import apiKeyManager from "../../state/apiKey/apiKeyManager";
 export default function Header() {
     return (
         <button
-            className="fixed top-2 left-2 text-green-500 text-sm"
+            className="fixed top-2 right-2 text-green-500 text-sm"
             onClick={() => {
                 apiKeyManager.setters.setApiKey(null);
                 apiKeyManager.setters.setIsAuthorized(false);
